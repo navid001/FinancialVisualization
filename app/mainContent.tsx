@@ -25,7 +25,7 @@ export default function Dashboard() {
     const [trends, setTrends] = useState<TrendData | null>(null);
     const [loading, setLoading] = useState(true);
     const [dateRange, setDateRange] = useState<DateRange>({
-        start: startOfMonth(addMonths(new Date(), -12)),
+        start: startOfMonth(new Date(2019, 0, 1)),
         end: endOfMonth(new Date()),
     });
     const [metrics, setMetrics] = useState({
